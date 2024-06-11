@@ -32,9 +32,11 @@ def main():
         if key_lst[pg.K_DOWN]:
             img_rct.move_ip((0,1))
         if key_lst[pg.K_RIGHT]:
-            img_rct.move_ip((1,0))
+            img_rct.move_ip((2,0))
         if key_lst[pg.K_LEFT]:
             img_rct.move_ip((-1,0))
+        img_rct.move_ip((-1,0))
+
         screen.blit(kk_img,img_rct)
         pg.display.update()
         tmr += 1      
